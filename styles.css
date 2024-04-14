@@ -1,0 +1,192 @@
+ 
+      body {
+        background: linear-gradient(to right, #43cea2, #185a9d);
+        color: #171313dd;
+        font-family: 'Roboto', sans-serif;
+      }
+      .card {
+          background-color: #ffffffdd;
+          border: none;
+          border-radius: 15px;
+          box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+          margin: 20px auto;
+          width: 90%;
+          max-width: 600px; 
+          padding: 20px;
+      }
+      .card h1 {
+        text-align: center;
+      }
+        .form-control {
+            background-color: #fff; 
+            border-radius: 20px;
+            border: 1px solid #ced4da;
+            color: #333; 
+            transition: border-color 0.3s ease;
+        }
+        
+         .input-group-text, .btn-primary {
+            border-radius: 20px;
+        }
+  
+  
+        .btn-primary {
+            background-color: #185a9d;
+            border: none;
+            width: 100%;
+            margin: 20px 0;
+        }
+  
+        .btn-primary:hover {
+            background-color: #43cea2;
+            box-shadow: 0 0 10px #43cea2;
+        }
+        
+  
+        .form-control:focus {
+            border-color: #43cea2;
+            box-shadow: 0 0 8px #43cea2;
+        }
+        
+        
+        .btn-primary {
+            background-color: #185a9d; 
+            border: none;
+            border-radius: 20px;
+            padding: 10px 30px;
+            display: block; 
+            width: 50%; 
+            margin: 20px auto; 
+            transition: background-color 0.3s, box-shadow 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background-color: #43cea2; 
+            box-shadow: 0 0 10px #43cea2; 
+        }
+        
+        .form-label {
+            color: #555;
+            font-weight: 500;
+        }
+
+        .input-group-text {
+            border-radius: 25px 0 0 25px;
+            background-color: #e9ecef;
+            border: 2px solid #e7e9eb;
+            border-right: none;
+        }
+        
+  
+        .error-icon-circle {
+            display: none;
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+        }
+        .question-mark {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            text-align: center;
+            border-radius: 50%;
+            background-color: #6c757d;
+            color: #fff;
+            font-size: 14px;
+            line-height: 20px;
+            cursor: pointer;
+        }
+        .error-icon-circle {
+            display: none; 
+            width: 20px;
+            height: 20px;
+            color: #fff;
+            position: absolute;
+            top: 50%;
+            right: 0px;
+            transform: translateY(-50%);
+            cursor: help;
+        }
+
+      
+        .modal-header {
+            background: linear-gradient(to right, #43cea2, #185a9d);
+            color: #fff;
+        }
+
+        .modal-title {
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .modal-body {
+            background-color: #f0f2f5;
+            border-radius: 20px;
+            padding: 25px;
+            box-shadow: 5px 5px 15px #a7a9ab, 
+                        -5px -5px 15px #ffffff;
+            transition: all 0.3s ease;
+            text-align: center;
+            color: #333;
+        }
+
+        .result-highlight {
+            display: inline-block;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            -webkit-background-clip: text;
+            color: transparent;
+            font-size: 22px;
+            font-weight: bold;
+            margin: 15px 0;
+            padding: 5px;
+            border-radius: 5px;
+            animation: pulseAnimation 2s infinite;
+        }
+
+        .fa-coins {
+            font-size: 40px;
+            color: #ffd700;
+            margin-bottom: 20px;
+            animation: rotateAnimation 2s linear infinite;
+        }
+
+        @keyframes rotateAnimation {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        @keyframes pulseAnimation {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        
+        .modal-footer {
+            background-color: #f0f2f5;
+        }
+
+        .btn-secondary {
+            background-color: #6a11cb;
+            border: none;
+            border-radius: 20px;
+            transition: background-color 0.2s ease;
+        }
+
+        .btn-secondary:hover {
+            background-color: #5019be;
+        }
+
+
+
+
+      @media (max-width: 768px) {
+          .card {
+              padding: 10px;
+              width: 95%; /* Adjust width for smaller devices */
+          }
+
+          .btn-primary {
+              padding: 10px 20px;
+          }
+      }
